@@ -1,0 +1,31 @@
+body {
+    background-size: cover;
+    background-image: url(https://th.bing.com/th/id/R.1885980104f490eba8016bc33cb912c4?rik=qXQ%2bOxjUS5LyIA&riu=http%3a%2f%2fwww.freeppt.net%2fbackground%2fabstract-colors-gradient-background.jpg&ehk=5gT0oqTsqIzONlRmLZdungtzGwQNLJIlYdggT2%2fGUVY%3d&risl=&pid=ImgRaw&r=0);
+}
+
+h1 {
+    font-family: sans-serif;
+    background-color: white;
+    border: black solid 2px;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-size: x-large;
+    font-family: sans-serif;
+    
+}
+
+
+#survey-form {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+#color-area {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
