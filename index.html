@@ -8,10 +8,10 @@
 </head>
 <body>
     <div class="div-title">
-      <h1 class="title">What's Your Favorite Color</h1>  
+      <h1 id="title">What's Your Favorite Color</h1>  
     </div>
     
-    <p class="description-text">
+    <p id="description">
         Colors, colors, colors everywhere... so many to choose from, so what is your favorite color? This is a 
         survey to decide on what color is the most popular color and which ones are not. Does your color have what it takes?
         Fill out the form below to find out...
@@ -22,21 +22,11 @@
         <label for="email" id="email-label" >What is your email?</label>
         <input id="email" type="email" required placeholder="Email address...">
         <label for="age" id="number-label">Age (optional):</label>
-        <input id="age" type="number" min="16" max="50" placeholder="Age...">
-    </form>
+        <input id="number" type="number" min="16" max="50" placeholder="Age...">
 
-    <form id="recieve-emails">
+         <label for="colors" id="favorite-color">What is your favorite color?</label>
 
-        <label for="accept-emails">Would you like to recieve emails from us?</label>
-        <input name="accept-emails" form="yes" type="radio" value="yes">yes</input>
-        <input name="accept-emails" form="no" type="radio" value="no">no</input>
-        
-    </form>
-
-    <form id="color-area">
-
-        <label for="colors" id="favorite-color">What is your favorite color?</label>
-        <select id="dropdown">
+         <select id="dropdown">
             <option value="blue">blue</option>
             <option value="yellow">yellow</option>
             <option value="purple">purple</option>
@@ -44,9 +34,11 @@
             <option value="green">green</option>
             <option value="pink">pink</option>
         </select>
-    </form>
 
-    <form id="why-area">
+        <label for="accept-emails">Would you like to recieve emails from us?</label>
+        <input name="accept-emails" form="yes" type="radio" value="yes">yes</input>
+        <input name="accept-emails" form="no" type="radio" value="no">no</input>
+        
 
         <label for="why" id="why">Why do you like this color?</label><br>
         <input type="checkbox" name="why" value="I just like it">I just like it</input><br>
@@ -54,8 +46,12 @@
         <input type="checkbox" name="why" value="Reminds me of childhood">Reminds me of childhood</input><br>
         <input type="checkbox" name="why" value="other">other</input><br><br>
 
+        
+
         <label for="why-other" id="why-other">If you chose other, tell us why below:</label><br>
         <textarea name="why" cols="40" rows="8" maxlength="100" placeholder="Let us know here..."></textarea>
+
+<button id="submit" type="submit">Submit</button>
     </form>
 </body>
 </html>
