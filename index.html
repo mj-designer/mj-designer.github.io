@@ -17,6 +17,7 @@
         Fill out the form below to find out...
     </p>
     <form id="survey-form">
+
         <label for="name" id="name-label">What is your name?</label>
         <input id="name" type="text" required placeholder="Full name...">
         <label for="email" id="email-label" >What is your email?</label>
@@ -35,23 +36,45 @@
             <option value="pink">pink</option>
         </select>
 
-        <label for="accept-emails">Would you like to recieve emails from us?</label>
-        <input name="accept-emails" form="yes" type="radio" value="yes">yes</input>
-        <input name="accept-emails" form="no" type="radio" value="no">no</input>
+        <div id="accept-email">
+            <label for="accept-email">Would you like to recieve emails from us?</label>
+            <input name="accept-email" form="yes" type="radio" value="yes">yes</input>
+            <input name="accept-email" form="no" type="radio" value="no">no</input>
+        </div>
+        
+        
+        <div id="why-options">  
+            <label for="why" id="why">Why do you like this color?</label>
+
+            <div>
+               <input type="checkbox" name="why"></input>
+                <label for="why">Everyone loves it</label> 
+            </div>
+            
+            <div>
+                <input type="checkbox" name="why"></input>
+                <label for="why">I just love it</label> 
+            </div>
+        
+            <div>
+                <input type="checkbox" name="why"></input>
+                <label for="why">It's a good color</label> 
+            </div>
+            
+            <div>
+                <input type="checkbox" name="why"></input>
+                <label for="why">other</label>
+            </div>
+             
+        </div>
         
 
-        <label for="why" id="why">Why do you like this color?</label><br>
-        <input type="checkbox" name="why" value="I just like it">I just like it</input><br>
-        <input type="checkbox" name="why" value="I just love it">I just love it</input><br>
-        <input type="checkbox" name="why" value="Reminds me of childhood">Reminds me of childhood</input><br>
-        <input type="checkbox" name="why" value="other">other</input><br><br>
-
         
+            <label for="why-other" id="why-other">If you chose other, tell us why below:</label>
 
-        <label for="why-other" id="why-other">If you chose other, tell us why below:</label><br>
-        <textarea name="why" cols="40" rows="8" maxlength="100" placeholder="Let us know here..."></textarea>
+            <textarea name="why" cols="40" rows="8" maxlength="100" placeholder="Let us know here..."></textarea>
 
-<button id="submit" type="submit">Submit</button>
+        <button id="submit" type="submit">Submit</button>
     </form>
 </body>
 </html>
