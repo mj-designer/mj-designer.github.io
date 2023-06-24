@@ -1,3 +1,4 @@
+/* main element styles */
 p {
     text-align: center;
     font-size: large;
@@ -11,6 +12,39 @@ h1 {
     text-align: center;
 }
 
+label {
+    cursor: pointer;
+}
+
+input {
+    padding: 2px;
+}
+
+
+textarea {
+    border-radius: 10px;
+    width: 790px;
+    height: 70px;
+    cursor: text;
+    padding: 5px;
+}
+
+button {
+    cursor: pointer;
+    margin: 20px auto 10px auto;
+    height: 30px;
+    width: 100px;
+    align-items: center;
+    border-radius: 10px;
+    border: none;
+    font-family: sans-serif;
+}
+
+button:hover {
+    box-shadow: 1px 1px 1px black;
+}
+
+/* survey form styles */
 #survey-form {
     padding: 20px;
     box-shadow: 5px 5px 5px grey;
@@ -23,36 +57,19 @@ h1 {
     margin: auto;
 }
 
+/*email section styles */
 #accept-email {
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
+/*section for asking the user why they chose this color*/
 #why-options div {
     margin: 5px;
 }
 
+/*label for the other selection text area*/
 #why-other {
     margin-top: 10px;
     margin-bottom: 10px;
-}
-
-textarea {
-    border-radius: 10px;
-    width: 790px;
-    height: 70px;
-}
-
-button {
-    margin: 20px auto 10px auto;
-    height: 30px;
-    width: 100px;
-    align-items: center;
-    border-radius: 10px;
-    border: none;
-    font-family: sans-serif;
-}
-
-button:hover {
-    box-shadow: 1px 1px 1px black;
 }
