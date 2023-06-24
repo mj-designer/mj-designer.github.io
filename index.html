@@ -11,6 +11,7 @@
       <h1 id="title">What's Your Favorite Color</h1>  
     </div>
     
+    <!-- description of what the survey is about -->
     <p id="description">
         Colors, colors, colors everywhere... so many to choose from, so what is your favorite color? This is a 
         survey to decide on what color is the most popular color and which ones are not. Does your color have what it takes?
@@ -18,15 +19,18 @@
     </p>
     <form id="survey-form">
 
+
+        <!-- User questions about their name, email and age -->
         <label for="name" id="name-label">What is your name?</label>
         <input id="name" type="text" required placeholder="Full name...">
         <label for="email" id="email-label" >What is your email?</label>
         <input id="email" type="email" required placeholder="Email address...">
         <label for="age" id="number-label">Age (optional):</label>
         <input id="number" type="number" min="16" max="50" placeholder="Age...">
+        
 
+        <!-- Section that asks about users favorite color -->
          <label for="colors" id="favorite-color">What is your favorite color?</label>
-
          <select id="dropdown">
             <option value="blue">blue</option>
             <option value="yellow">yellow</option>
@@ -36,13 +40,14 @@
             <option value="pink">pink</option>
         </select>
 
+        <!-- Asking the user if they would like to recieve emails -->
         <div id="accept-email">
             <label for="accept-email">Would you like to recieve emails from us?</label>
             <input name="accept-email" form="yes" type="radio" value="yes">yes</input>
             <input name="accept-email" form="no" type="radio" value="no">no</input>
         </div>
         
-        
+        <!-- Asks the user to explain why they like their color -->
         <div id="why-options">  
             <label for="why" id="why">Why do you like this color?</label>
 
@@ -69,7 +74,7 @@
         </div>
         
 
-        
+        <!-- If the user picks other they will put their answer here -->
             <label for="why-other" id="why-other">If you chose other, tell us why below:</label>
 
             <textarea name="why" cols="40" rows="8" maxlength="100" placeholder="Let us know here..."></textarea>
